@@ -1,2 +1,6 @@
 
-@import "node_modules/bulma/bulma"
+@import "node_modules/bulma/css/bulma";
+
+html {
+    overflow-y: auto !important;
+}
