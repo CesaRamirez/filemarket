@@ -16,12 +16,18 @@
                                     <label for="email" class="label">Email</label>
                                     <p class="control">
                                         <input type="email" name="email" id="email" placeholder="e.g. cesar@email.com" class="input is-primary">
+                                        @if ($errors->has('email'))
+                                            <p class="help is-danger">{{ $errors->first('email') }}</p>
+                                        @endif
                                     </p>
                                 </div>
                                 <div class="field">
                                     <label for="password" class="label">Password</label>
                                     <p class="control">
                                         <input type="password" name="password" id="password" class="input is-primary">
+                                        @if ($errors->has('password'))
+                                            <p class="help is-danger">{{ $errors->first('password') }}</p>
+                                        @endif
                                     </p>
                                 </div>
                                 <div class="field">
