@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="section hero is-primary">
+    <section class="section">
         <div class="container is-fluid">
             <div class="columns">
                 <div class="column is-half is-offset-one-quarter">
@@ -15,13 +15,13 @@
                                 <div class="field">
                                     <label for="email" class="label">Email</label>
                                     <p class="control">
-                                        <input type="email" name="email" id="email" placeholder="e.g. cesar@email.com" class="input">
+                                        <input type="email" name="email" id="email" placeholder="e.g. cesar@email.com" class="input is-primary">
                                     </p>
                                 </div>
                                 <div class="field">
                                     <label for="password" class="label">Password</label>
                                     <p class="control">
-                                        <input type="password" name="password" id="password" class="input">
+                                        <input type="password" name="password" id="password" class="input is-primary">
                                     </p>
                                 </div>
                                 <div class="field">
@@ -35,7 +35,7 @@
                             </div>
                             <footer class="card-footer">
                                 <div class="card-footer-item">
-                                    <button type="submit" class="button is-primary">Sign In</button>
+                                    <button type="submit" class="button is-primary is-outlined">Sign In</button>
                                 </div>
                                 <div class="card-footer-item">
                                     <a href="{{ route('password.request')}}">Forgotten your Password?</a>

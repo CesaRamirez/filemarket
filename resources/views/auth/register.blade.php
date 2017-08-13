@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="section hero is-primary">
+    <section class="section">
         <div class="container is-fluid">
             <div class="columns">
                 <div class="column is-half is-offset-one-quarter">

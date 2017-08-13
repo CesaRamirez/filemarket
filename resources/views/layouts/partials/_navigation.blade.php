@@ -1,4 +1,4 @@
-<nav class="nav">
+<nav class="nav is-primary hero">
     <div class="container">
         <div class="nav-left">
             <a class="nav-item is-brand" href="{{ route('home') }}">
