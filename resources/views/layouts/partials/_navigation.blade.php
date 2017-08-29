@@ -16,7 +16,7 @@
                     document.getElementById('logout').submit();">
                     Sign Out
                 </a>
-                <a href="" class="nav-item">Your Account</a>
+                <a href="{{ route('account') }}" class="nav-item">Your Account</a>
             @else
                 <a href="{{ route('login') }}" class="nav-item">Sign In</a>
                 <div class="nav-item">
