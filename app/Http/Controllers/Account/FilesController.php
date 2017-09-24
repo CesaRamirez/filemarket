@@ -40,7 +40,7 @@ class FilesController extends Controller
         $file->finished = true;
         $file->save();
 
-        return redirect()->route('account');
+        return redirect()->route('account')->withSuccess('Test');
     }
 
     public function createAndReturnSkeletonFile()
