@@ -1,7 +1,7 @@
  <aside class="menu">
     <p class="menu-label">Files</p>
     <ul class="menu-list">
-        <li><a href="#">Your Files</a></li>
+        <li><a href="{{ route('account.files.index') }}">Your Files</a></li>
         <li><a href="{{ route('account.files.create.start') }}">Sell a File</a></li>
     </ul>
     <p class="menu-label">General</p>
