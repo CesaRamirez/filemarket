@@ -24,6 +24,14 @@ class File extends Model
         'finished',
     ];
 
+    public static function boot()
+    {
+        parent::boot();
+
+        parent::creating(function ($file) {
+            $file->identifier = uniqid(true);
+        });
+    }
     /**
      * Get the route key for the model.
      *
