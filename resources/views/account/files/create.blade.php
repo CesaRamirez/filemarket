@@ -2,7 +2,8 @@
 
 @section('account.content')
     <h1 class="title">Sell a File</h1>
-    <form class="form" action="#" method="post">
+    <form class="form" action="{{ route('account.files.store', $file) }}" method="post">
+      {{ csrf_field() }}
       <div class="field">
         <label for="title" class="label">Title</label>
         <p class="control">
@@ -46,7 +47,7 @@
 
       <div class="is-grouped filed">
         <p class="control">
-          <button type="button" name="button" class="button is-primary">Submit</button>
+          <button class="button is-primary">Submit</button>
         </p>
         <p>we'll review your file before it goes live.</p>
       </div>
