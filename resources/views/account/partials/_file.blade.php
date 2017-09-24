@@ -1,13 +1,5 @@
-<article class="media">
-  <div class="media-content">
-    <div class="content">
-      <p>
-        <strong>
-          <a href="#">{{ $file->title }}</a>
-        </strong><br>
-        <p>{{ $file->overview_short }}</p>
-      </p>
-    </div>
+@component('files.partials._file', compact('file'))
+  @slot('links')
     <div class="level">
       <div class="level-left ">
         <p class="level-item">
@@ -24,5 +16,5 @@
         <a href="#" class="level-item">Make Changes </a>
       </div>
     </div>
-  </div>
-</article>
+  @endslot
+@endcomponent
