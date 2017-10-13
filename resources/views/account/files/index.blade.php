@@ -5,6 +5,6 @@
     @if ($files->count())
       @each('account.partials._file', $files, 'file')
     @else
-      <p>You hace no files.</p>
+      <p>You have no files.</p>
     @endif
 @endsection

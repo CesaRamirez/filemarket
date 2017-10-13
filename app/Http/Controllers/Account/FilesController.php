@@ -16,6 +16,11 @@ class FilesController extends Controller
         return view('account.files.index', compact('files'));
     }
 
+    public function edit(File $file)
+    {
+        return view('account.files.edit', compact('file'));
+    }
+
     public function create(File $file)
     {
         if (! $file->exists) {

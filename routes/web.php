@@ -10,6 +10,8 @@ $router->middleware('auth')
            $router->group(['prefix' => '/files'], function ($router) {
                $router->get('/', 'FilesController@index')
                       ->name('account.files.index');
+               $router->get('/{file}/edit', 'FilesController@edit')
+                      ->name('account.files.edit');
                $router->post('/{file}', 'FilesController@store')
                       ->name('account.files.store');
                $router->get('/create', 'FilesController@create')
