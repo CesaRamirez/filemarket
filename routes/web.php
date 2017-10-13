@@ -1,7 +1,5 @@
 <?php
 
-Auth::routes();
-
 $router->get('/', 'HomeController@index')->name('home');
 $router->middleware('auth')
        ->prefix('account')
@@ -20,3 +18,7 @@ $router->middleware('auth')
                       ->name('account.files.create');
            });
        });
+
+$router->auth();
+
+$router->get('/home', 'HomeController@index')->name('home');
